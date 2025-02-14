@@ -1,3 +1,78 @@
-<link rel="icon" type="image/png" href="/favicon.png" />
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="icon" type="image/png" href="static/favicon.png" />
+  </head>
+  <style>
+    :root {
+      --primary-color: #005f73;
+      --primary-color-weak: #4a5568;
+      --secondary-color: #ee6c4d;
+      --secondary-color-weak: #f7fafc;
 
-Hello World
+      --primary-text: #1a202c;
+    }
+
+    @font-face {
+      font-family: Gyrochrome;
+      src: url(static/fonts/gyrochrome/Gyrochrome-Regular.otf);
+    }
+
+    @font-face {
+      font-family: OpenSans;
+      src: url(static/fonts/open-sans/OpenSans-Regular.ttf);
+    }
+
+    body {
+      margin: 0;
+      font-family: OpenSans;
+    }
+
+    h1,
+    h2 {
+      font-family: Gyrochrome;
+    }
+
+    .hero-logo {
+      margin: 0 auto;
+      display: block;
+    }
+
+    h1, p {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      padding: 1rem 0;
+    }
+
+    .button,
+    .button2 {
+      background: var(--primary-color);
+      border: 0;
+      border-radius: 5px;
+      color: var(--secondary-color-weak);
+      display: block;
+      margin: 0 auto;
+      padding: 0.5rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .button2 {
+      background: var(--secondary-color);
+    }
+
+    a {
+      width: 300px;
+    }
+  </style>
+  <body>
+    <img class="hero-logo" src="static/hero-logo.png" />
+    <h1>Welcome to Mekadomus!</h1>
+    <p>Head to the console to manage your devices</p>
+    <a href="https://console.mekadomus.com" class="button2">Console</a>
+  </body>
+</html>
